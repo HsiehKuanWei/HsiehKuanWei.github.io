@@ -58,7 +58,7 @@
 }
 
 .pgwSlideshow .ps-list {
-    border-top: 1px solid #555;
+	border-top: 1px solid #555;
     box-shadow: 0 10px 10px -5px #333 inset;
     background: #555;
     overflow: hidden;
@@ -79,7 +79,7 @@
 
 .pgwSlideshow .ps-list li .ps-item {
     display: block;
-    margin: 15px 8px;
+    margin: 15px 6px;
     opacity: 0.6;
     filter: alpha(opacity=60);
 }
