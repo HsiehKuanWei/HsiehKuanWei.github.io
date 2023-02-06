@@ -24,13 +24,36 @@
 		</ul>
       </div>
 	<script>
-$(document).ready(function() {
-    $('.pgwSlideshow').pgwSlideshow({
+function WedthChange(x) {
+
+if (x.matches) {
+
+var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow();
+pgwSlideshow.reload({
+maxHeight:750,	
 adaptiveDuration:500,
 autoSlide:true,
 intervalDuration:10000,
 		});
-});
 
+	
+}
+else {		
+
+$(document).ready(function() {
+    $('.pgwSlideshow').pgwSlideshow({
+maxHeight:500,		
+adaptiveDuration:500,
+autoSlide:true,
+intervalDuration:10000,
+		});
+});	
+	
+}}
+
+	
+var x = window.matchMedia("(max-width: 500px)")
+WedthChange(x) // 执行时调用的监听函数
+x.addListener(WedthChange) // 状态改变时添加监听器
 	</script>
 </html>
